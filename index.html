@@ -28,8 +28,11 @@
 
         <p><a href="http://blog.hotoo.me/Gtalk-group-for-Vim.html">广告：欢迎加入 Vim 的 Gtalk 群</a></p>
 
-        <h3>0. 预览</h3>
+        <h3>0. 项目</h3>
+        <div id="github-projects"></div>
+        <small><a href="http://aboutcode.net/2010/11/11/list-github-projects-using-javascript.html">ref</a></small>
 
+        <h3>1. 预览</h3>
         <p>
         <ul>
             <li>帮助文档</li>
@@ -39,8 +42,8 @@
         </ul>
         </p>
 
-        <h2>1. 翻译方法及约定</h2>
-        <h3>1.1. 帮助文档</h3>
+        <h2>2. 翻译方法及约定</h2>
+        <h3>2.1. 帮助文档</h3>
 
         <blockquote>注：使用文档：即脚本附带的使用说明，一般要放置到 vimfiles/doc 目录中。</blockquote>
 
@@ -60,5 +63,39 @@ Linux:
 :helptags ~/.vim/doc
 </pre>
     </div>
+
+<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery.githubUser = function(username, callback) {
+  jQuery.getJSON("http://github.com/api/v1/json/" + username + "?callback=?", callback);
+}
+
+jQuery.fn.loadRepositories = function(username) {
+  this.html("<span>Querying GitHub for repositories...</span>");
+
+  var target = this;
+  $.githubUser(username, function(data) {
+    var repos = data.user.repositories;
+    sortByNumberOfWatchers(repos);
+
+    var list = $('<dl/>');
+    target.empty().append(list);
+    $(repos).each(function() {
+      list.append('<dt><a href="'+ this.url +'">' + this.name + '</a></dt>');
+      list.append('<dd>' + this.description + '</dd>');
+    });
+  });
+
+  function sortByNumberOfWatchers(repos) {
+    repos.sort(function(a,b) {
+      return b.watchers - a.watchers;
+    });
+  }
+};
+
+  $(function() {
+    $("#github-projects").loadRepositories("vimcn");
+  });
+</script>
 </body>
 </html>
