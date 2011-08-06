@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="generator" content="gvim" />
+<meta name="author" content="闲耘™ (hotoo.cn[AT]gmail.com)" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+<title>安装 & 使用 - Vim 文档中文计划</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>安装 & 使用</h1>
+        <ol>
+        <li>下载（或 git clone） <a href="https://github.com/vimcn">Vim script 中文文档(*.cnx)</a></li>
+        <li>放至 Vim 用户目录下的 doc 目录中<br />
+            for Windows: <code>$VIM/vimfiles/doc</code><br />
+            for Unix-like(Linux, Mac OSX): <code>~/.vim/doc</code><br />
+            以下统称 $VIM/vimfiles 和 ~/.vim 目录为 runtime 目录。
+        </li>
+        <li>在 Vim 环境中运行 <code>helptags</code> 命令生成 tags：<p />
+for Windows:
+<pre>
+:helptags $Vim/vimfiles/doc
+</pre>
+for Unix-like:
+<pre>
+:helptags ~/.vim/doc
+</pre>
+        </li>
+        <li>设置 Vim 使用的文档语言，默认是英文。
+<pre>
+:set helplang=cn
+</pre>
+            如果在 vimrc 设置无效，可以查看并修改 runtime/plugin/vimcdoc.vim
+            中的设置，之前安装有 Vim 中文帮助则可以忽略这步。
+        </li>
+        </ol>
+        <div id="footer">Vim 文档中文团队 &copy; Copyleft.</div>
+    </div>
+</body>
+</html>

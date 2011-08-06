@@ -8,60 +8,32 @@
 <meta name="author" content="闲耘™ (hotoo.cn[AT]gmail.com)" />
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<style type="text/css" media="screen">
-    html,body{margin:0; padding:0;}
-    #wrapper{width:950px; margin:0 auto;}
-</style>
-<title>Index</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+<title>Vim 文档中文计划</title>
 </head>
 <body>
     <div id="wrapper">
-        <h1>Vim 中文团队</h1>
 
-        <h2><a href="https://github.com/vimcn">Vim Script 文档中文计划</a></h2>
+        <h1>Vim Script 文档中文计划</h1>
 
+        <p>这是个业余的兴趣项目，主要是由各个成员翻译自己熟悉、喜爱推荐的优秀脚本的帮助文档，
+        也可以附上介绍，和一些小技巧之类。</p>
+
+        <p>欢迎有兴趣的朋友加入翻译或推荐脚本。参加方法：(建议使用自己的Gmail)
+        邮件你的 github id 到 hotoo.cn+vimdocs[AT]gmail.com</p>
         <p>Vim Script 即 Vim 脚本，又称 Vim 插件(Plugin)，以下统称“脚本”。</p>
-
-        <p>这是个业余的兴趣项目，主要是由各个成员翻译自己熟悉、推荐的优秀脚本的帮助文档，介绍，并附上一些小技巧之类。</p>
-
-        <p>欢迎有兴趣的朋友加入翻译或推荐脚本。参加方法：(建议使用自己的Gmail) 邮件你的 github id 到 hotoo.cn[AT]gmail.com</p>
-
+        <ul>
+            <li><a href="https://github.com/vimcn">项目源码</a></li>
+            <li><a href="http://wiki.hotoo.me/Vim.html">Vim 资料收集</a></li>
+            <li><a href="spec.html">翻译规范 & 约定</a></li>
+            <li><a href="TODO.html">翻译计划</a></li>
+            <li><a href="usage.html">安装 & 使用</a></li>
+        </ul>
         <p><a href="http://blog.hotoo.me/Gtalk-group-for-Vim.html">广告：欢迎加入 Vim 的 Gtalk 群</a></p>
-
-        <h3>0. 项目</h3>
         <div id="github-projects"></div>
         <small><a href="http://aboutcode.net/2010/11/11/list-github-projects-using-javascript.html">ref</a></small>
 
-        <h3>1. 预览</h3>
-        <p>
-        <ul>
-            <li>帮助文档</li>
-            <li>官方介绍</li>
-            <li>Vim 资料收集</li>
-            <li>翻译计划：PLAN</li>
-        </ul>
-        </p>
-
-        <h2>2. 翻译方法及约定</h2>
-        <h3>2.1. 帮助文档</h3>
-
-        <blockquote>注：使用文档：即脚本附带的使用说明，一般要放置到 vimfiles/doc 目录中。</blockquote>
-
-        <ul>
-            <li>翻译的文件与原始文档同名，后缀改为 .cnx</li>
-            <li>文件放置到 trunk/doc/ 目录中。</li>
-            <li>翻译完成后，在 Vim 中执行一下命令生成 tag：</li>
-        </ul>
-
-Windows:
-<pre>
-:helptags $VIM/vimfiles/doc
-</pre>
-
-Linux:
-<pre>
-:helptags ~/.vim/doc
-</pre>
+        <div id="footer">Vim 文档中文团队 &copy; Copyleft.</div>
     </div>
 
 <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>

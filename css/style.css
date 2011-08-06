@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/**
+ * style.css
+ *
+ * @author 闲耘™ (hotoo.cn[AT]gmail.com)
+ * @version 2011/08/06
+ */
+html,body{margin:0; padding:0;}
+h1{border-bottom:1px solid #ccc;}
+h2,h3{border-bottom:1px solid #eee;}
+#wrapper{width:800px; margin:0 auto;}
+address{display:inline-block; padding:1px 4px; border:1px dashed #ccc;}
+code{border:1px dashed #ccc; display:inline-block; padding:1px 3px;}
+ol,ul{border-width:1px 0; border-style:dashed; border-color:#ccc; padding:8px 3em; background:#f8f8f8;}
+pre{border-left:3px solid #666; padding:5px 8px; background:#f0f0f0;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+table{border-collapse:collapse;}
+th,td{border:1px solid #ccc; padding:2px 8px;}
+th{background:#eee none;}
+
+#github-projects{border-width:1px 0; border-style:dashed; border-color:#ccc; padding:8px 2em; background:#f8f8f8;}
+#footer{border-top:1px solid #ccc; text-align:center; padding:5px; margin:3em 0; font-size:.8em; color:#999;}
