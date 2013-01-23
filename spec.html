@@ -18,6 +18,13 @@
             为了规范文档，提高文档质量和一致性，文档格式建议如下：
         </p>
         <h2>翻译方法</h2>
+        文件结构：
+<pre>
++- /doc
+|  +- {script_name}.cnx
+|  `- {script_name}.txt
+`- /README.md
+</pre>
         <ol>
             <li>翻译的文档与原始文档同名，后缀改为 .cnx</li>
             <li>保留（一般是英文）原始文档 .txt 文件。</li>
@@ -33,7 +40,7 @@
         </ol>
         <h2>文档相关</h2>
         <p>Vim 文档由 tags 来链接各个相关的帮助信息，tags 是包含在两个星号之间的关键字，
-        在 Vim 中使用 `:helptags` 命令会根据这些信息生成 tags：</p>
+        在 Vim 中使用 <code>:helptags</code> 命令会根据这些信息生成 tags：</p>
 <pre>
 *help-tags*
 </pre>
@@ -65,7 +72,7 @@ more codes.
 <pre>
 闲耘™ &lt;hotoo.cn[AT]gmail.com&gt;
 </pre>
-<p>中间的 `[AT]` 是为了防止垃圾邮件，你也可以直接使用 `@` 或者其他容易识别的字符。</p>
+<p>中间的 <code>[AT]</code> 是为了防止垃圾邮件，你也可以直接使用 <code>@</code> 或者其他容易识别的字符。</p>
         <p>
         如果你有建议，请联系 <address>hotoo.cn[AT]gmail.com</address>
         </p>
