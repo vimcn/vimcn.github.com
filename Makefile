@@ -4,7 +4,7 @@ watch:
 build:
 	@nico build
 publish: clear build
-	@ghp-import _site
-	@git push origin gh-pages
+	@ghp-import -b master _site
+	@git push origin master
 clear:
 	@rm -rf _site
