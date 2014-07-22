@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="nico 0.5.0">
+    <meta name="theme" content="one 0.2">
+    <title>安装 &amp; 使用</title>
+    <link rel="stylesheet" href="./static/one.css" />
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '[object Object]']);
+      _gaq.push(['_trackPageview']);
+      _gaq.push(['_trackPageLoadTime']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = 'https://ssl.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="brand">
+          <a class="home" href="./">Vim 中文计划</a>
+        </div>
+        <div class="menu" role="navigation">
+          <a href="../../../../../spec">翻译规范 & 约定</a>
+          <a href="../../../../../usage">安装 & 使用</a>
+          <a href="https://github.com/vimcn/vimcn.github.com/wiki/PLAN/.">翻译计划</a>
+        </div>
+      </div>
+    </div>
+    <div class="document yue">
+<div class="hentry" itemscope itemtype="http://schema.org/Article">
+  <h1 class="entry-title" itemprop="name">安装 &amp; 使用</h1>
+  <div class="entry-content" itemprop="articleBody"><h2 id="如果安装了-vundle">如果安装了 Vundle</h2><ul>
+<li>在 vimrc 中写入 <code>Plugin &quot;vimcn/{script_name}.cnx&quot;</code>。</li>
+<li>执行 <code>:PluginInstall</code> 命令即可。</li>
+</ul>
+<h2 id="手工方式">手工方式</h2><ul>
+<li>下载（或 git clone） <a href="https://github.com/vimcn">Vim script 中文文档(*.cnx)</a></li>
+<li><p>放至 Vim 用户目录下的 doc 目录中</p>
+<ul>
+<li>for Windows: <code>$VIM/vimfiles/doc</code></li>
+<li>for Unix-like(Linux, Mac OSX): <code>~/.vim/doc</code><blockquote>
+<p>以下统称 <code>$VIM/vimfiles</code> 和 <code>~/.vim</code> 目录为 <code>runtime</code> 目录。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>在 Vim 环境中运行 <code>helptags</code> 命令生成 tags：</p>
+<p>for Windows:</p>
+<pre>:helptags $Vim/vimfiles/doc</pre><p>for Unix-like:</p>
+<pre>:helptags ~/.vim/doc</pre></li>
+<li><p>设置 Vim 使用的文档语言，默认是英文。</p>
+<pre>:set helplang=cn</pre><p>如果在 vimrc 设置无效，可以查看并修改 <code>runtime/plugin/vimcdoc.vim</code>
+中的设置，之前安装有 Vim 中文帮助则可以忽略这步。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+    <div class="footer">
+      <p class="copyright">Vim 文档中文团队 © Copyleft.</p>
+    </div>
+    <div class="github"><a class="github-link" href="https://github.com/vimcn">Fork me on GitHub</a></div>
+    <script src="./static/one.js"></script>
+  </body>
+</html>
