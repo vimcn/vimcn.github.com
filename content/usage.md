@@ -5,8 +5,8 @@
 
 ## 如果安装了 Vundle
 
-* 在 vimrc 中写入 Bundle "vimcn/{script_name}.cnx"。
-* 执行 <code>:BundleInstall</code> 命令即可。
+* 在 vimrc 中写入 `Plugin "vimcn/{script_name}.cnx"`。
+* 执行 `:PluginInstall` 命令即可。
 
 ## 手工方式
 
