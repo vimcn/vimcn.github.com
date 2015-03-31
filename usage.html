@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="generator" content="nico 0.5.0">
+    <meta name="generator" content="nico 0.5.1">
     <meta name="theme" content="one 0.2">
     <title>安装 &amp; 使用</title>
     <link rel="stylesheet" href="./static/one.css" />
@@ -35,12 +35,15 @@
     <div class="document yue">
 <div class="hentry" itemscope itemtype="http://schema.org/Article">
   <h1 class="entry-title" itemprop="name">安装 &amp; 使用</h1>
-  <div class="entry-content" itemprop="articleBody"><h2 id="如果安装了-vundle">如果安装了 Vundle</h2><ul>
-<li>在 vimrc 中写入 <code>Plugin &quot;vimcn/{script_name}.cnx&quot;</code>。</li>
-<li>执行 <code>:PluginInstall</code> 命令即可。</li>
-</ul>
+  <div class="entry-content" itemprop="articleBody"><h2 id="vundle-方式">Vundle 方式</h2><p>.vimrc 中加入：</p>
+<pre>Plugin &quot;vimcn/{repository-name}&quot;</pre><p>重启 Vim 执行 <code>:PluginInstall</code></p>
+<h2 id="neobundle-方式">NeoBundle 方式</h2><p>.vimrc 中：</p>
+<pre>NeoBundle &#39;vimcn/{repository-name}&#39;</pre><p>重启 Vim 执行命令 <code>:NeoBundleInstall</code></p>
+<h2 id="pathogen-方式">Pathogen 方式</h2><p>终端（命令行）执行：</p>
+<pre>$ cd ~/.vim/bundle
+$ git clone git://github.com/vimcn/{repository-name}.git</pre><p>重启 Vim 即可。</p>
 <h2 id="手工方式">手工方式</h2><ul>
-<li>下载（或 git clone） <a href="https://github.com/vimcn">Vim script 中文文档(*.cnx)</a></li>
+<li>下载（或 git clone） <a href="https://github.com/vimcn">Vim script 中文文档 (*.cnx)</a> </li>
 <li><p>放至 Vim 用户目录下的 doc 目录中</p>
 <ul>
 <li>for Windows: <code>$VIM/vimfiles/doc</code></li>
