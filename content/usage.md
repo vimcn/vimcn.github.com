@@ -7,8 +7,8 @@
 
 .vimrc 中加入：
 
-```viml
-Plugin "vimcn/{script_name}.cnx"
+```
+Plugin "vimcn/{repository-name}"
 ```
 
 重启 Vim 执行 `:PluginInstall`
@@ -18,7 +18,7 @@ Plugin "vimcn/{script_name}.cnx"
 
 .vimrc 中：
 
-```viml
+```
 NeoBundle 'vimcn/{repository-name}'
 ```
 
