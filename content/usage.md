@@ -3,14 +3,43 @@
 
 ----
 
-## 如果安装了 Vundle
+## Vundle 方式
 
-* 在 vimrc 中写入 `Plugin "vimcn/{script_name}.cnx"`。
-* 执行 `:PluginInstall` 命令即可。
+.vimrc 中加入：
+
+```viml
+Plugin "vimcn/{script_name}.cnx"
+```
+
+重启 Vim 执行 `:PluginInstall`
+
+
+## NeoBundle 方式
+
+.vimrc 中：
+
+```viml
+NeoBundle 'vimcn/{repository-name}'
+```
+
+重启 Vim 执行命令 `:NeoBundleInstall`
+
+
+## Pathogen 方式
+
+终端（命令行）执行：
+
+```
+$ cd ~/.vim/bundle
+$ git clone git://github.com/vimcn/{repository-name}.git
+```
+
+重启 Vim 即可。
+
 
 ## 手工方式
 
-* 下载（或 git clone） [Vim script 中文文档(*.cnx)](https://github.com/vimcn)
+* 下载（或 git clone） [Vim script 中文文档 (*.cnx)](https://github.com/vimcn) 
 * 放至 Vim 用户目录下的 doc 目录中
 
   * for Windows: `$VIM/vimfiles/doc`
